@@ -3,7 +3,7 @@ App({
     onLaunch: function () {
     },
     globalData: {
-        apiServer: 'https://gt.fengmoxi.com/',
+        apiServer: 'https://sues.fengmoxi.com/',
         course: [],
         cookie: null,
         token: null,
