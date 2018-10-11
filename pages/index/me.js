@@ -16,7 +16,7 @@ Page({
         const updateTime = new Date(wx.getStorageSync('updateTime'));
         if (u) {
             this.setData({
-                updateTime: updateTime.getFullYear() + '年' + updateTime.getMonth() + '月' + updateTime.getDate() + '日'
+                updateTime: updateTime.getFullYear() + '年' + (updateTime.getMonth() + 1) + '月' + updateTime.getDate() + '日'
             });
         }
     }
