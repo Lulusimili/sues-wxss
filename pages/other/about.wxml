@@ -1,0 +1,28 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">开源地址&开源协议</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article" bindtap="copyURL">
+            <view class="weui-article__h1">GitHub(点击复制)</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">https://github.com/{{github}}</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        Welcome to Pull Requests & Issues!
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-article">
+            <view class="weui-article__h1">LICENSE</view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                    {{LICENSE}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

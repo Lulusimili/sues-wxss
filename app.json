@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/me",
+    "pages/index/loginSchool",
+    "pages/other/about",
+    "pages/other/tk",
+    "pages/other/updateNotice"
+  ],
+  "tabBar": {
+    "color": "#9b9b9b",
+    "selectedColor": "#55b737",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/icon-notset-table.png",
+        "selectedIconPath": "pages/images/icon-table.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/me",
+        "iconPath": "pages/images/icon-notset-me.png",
+        "selectedIconPath": "pages/images/icon-me.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工程大课表",
+    "navigationBarTextStyle": "black"
+  }
+}

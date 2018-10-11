@@ -1,0 +1,81 @@
+<view class="page">
+    <view class="head corner">
+        <view class="header weui-flex">
+            <view class="header-btn" bindtap="preWeek">
+                <image style="width: 16px; height: 16px;" src="{{prebtn}}"/>
+            </view>
+            <view class="weui-flex__item header-time">
+                <picker bindchange="bindWeekChange" value="{{dateTitle}}" range="{{weekArr}}">
+                    <view>
+                        {{weekArr[dateTitle]}}
+                    </view>
+                </picker>
+            </view>
+            <view class="header-btn" bindtap="nextWeek">
+                <image style="width: 16px; height: 16px;" src="{{nextbtn}}"/>
+            </view>
+        </view>
+    </view>
+    <view class="head corner" style="top:60rpx;">
+        <view class="weeks left">
+            <text>{{month}}</text>
+            <text>月</text>
+        </view>
+        <view class="week-title" style="width: {{colWidth+6}}px" wx:for="{{title}}" wx:key="week">
+            <text>{{item.week}}</text>
+            <text>{{item.date}}</text>
+        </view>
+    </view>
+    <view class="placeholder"></view>
+    <view class="backgroud-img" style="background-image: url('{{bg}}')"/>
+    <view class="body">
+        <view class="sidebar corner">
+            <view>
+                <text>1</text>
+                <text>2</text>
+            </view>
+            <view>
+                <text>3</text>
+                <text>4</text>
+            </view>
+            <view>
+                <text>5</text>
+                <text>6</text>
+            </view>
+            <view>
+                <text>7</text>
+                <text>8</text>
+            </view>
+            <view>
+                <text>13</text>
+                <text>14</text>
+            </view>
+            <view>
+                <text>9</text>
+                <text>10</text>
+            </view>
+            <view>
+                <text>11</text>
+                <text>12</text>
+            </view>
+        </view>
+        <view class="content">
+            <!-- 循环 每天 -->
+            <view class="column" wx:for="{{courses}}" wx:key="*this">
+                <!-- 循环 -->
+                <block wx:for="{{item}}" wx:key="*this">
+                    <view class="course" bindtap="showDetail"
+                          data-name="{{item.name}}" data-address="{{item.address}}" data-time="{{item.time}}"
+                          data-teacher="{{item.teacher}}" data-id="{{id}}"
+                          style="border-radius:5px;text-align:center;background-color: {{item.bg}};opacity:0.6;width:{{colWidth}}px;font-size:12px;height: {{item.height}}px;margin-top: 3px;margin-bottom: 3px;">
+                        <view>
+                            <text>{{item.name}}</text>
+                            <view style="height: 12px"></view>
+                            <text>{{item.address}}</text>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">QQ群：470879821</view>
+        <view class="page__desc">欢迎加入工程大课表反馈群</view>
+    </view>
+    <view class="page__bd">
+        <view class="button-sp-area">
+            <button class="weui-btn" type="default" plain="true" bindtap="copyNUM">复制群号</button>
+        </view>
+        <view class="button-sp-area">
+            <button class="weui-btn" type="default" plain="true" bindtap="copyURL">复制Issues提交地址</button>
+        </view>
+    </view>
+</view>

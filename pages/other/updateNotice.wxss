@@ -1,0 +1,15 @@
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}
+.button-sp-area {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+
+.mini-btn {
+    margin-right: 5px;
+}

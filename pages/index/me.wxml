@@ -1,0 +1,33 @@
+<view class="page">
+    <view class="page__hd" style="text-align: center">
+        <image style="width: 100px;height: 100px" src="../images/logo.png"/>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">关于</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd">版本号</view>
+                <view class="weui-cell__ft">{{version}}</view>
+            </view>
+            <navigator url="/pages/other/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">开源地址&开源协议</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+        <view class="weui-cells__title">设置</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="/pages/index/loginSchool" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">更新数据</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">更新于 {{updateTime}}</view>
+            </navigator>
+            <view bindtap="setBG" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">壁纸设置(beta)</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <navigator url="/pages/other/tk" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">意见反馈</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+</view>
