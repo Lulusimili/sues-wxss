@@ -8,7 +8,7 @@ App({
         cookie: null,
         token: null,
         version: '1.1.0CE',
-        github: 'fengmoxi/SUES-Timetable',
+        github: 'swiftwhale/SUES-Timetable',
         update: {
             time: '2018年10月11日',
             text: [
