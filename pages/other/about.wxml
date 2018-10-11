@@ -17,11 +17,7 @@
         <view class="weui-article">
             <view class="weui-article__h1">LICENSE</view>
             <view class="weui-article__section">
-                <view class="weui-article__section">
-                    <view class="weui-article__p">
-                    {{LICENSE}}
-                    </view>
-                </view>
+                <text space="ensp">{{LICENSE}}</text>
             </view>
         </view>
     </view>
