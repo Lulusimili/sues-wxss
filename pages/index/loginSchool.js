@@ -34,7 +34,7 @@ Page({
         });
         const username = this.data.u;
         const password = this.data.p;
-        const url = app.globalData.apiServer + 'get/course';
+        const url = app.globalData.apiServer + 'sues/courses';
         let data = {
             username: username
             , password: password
@@ -42,7 +42,7 @@ Page({
         wx.request({
             url: url
             , data: data
-            , method: 'POST'
+            , method: 'GET'
             , success: res => {
                 wx.setStorageSync('username', username);
                 wx.setStorageSync('password', password);

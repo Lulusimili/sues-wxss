@@ -3,14 +3,14 @@ App({
     onLaunch: function () {
     },
     globalData: {
-        apiServer: 'https://sues.fengmoxi.com/',
+        apiServer: 'https://sues.swiftwhale.cn/',
         course: [],
         cookie: null,
         token: null,
         version: '1.1.0CE',
-        github: 'swiftwhale/SUES-Timetable',
+        github: 'swiftwhale/sues-wxss',
         update: {
-            time: '2018年10月11日',
+            time: '2018年10月25日',
             text: [
                 '我们做了个振奋人心的决定，本小程序开源啦！',
                 '欢迎各位小伙伴提交issue和pull request来完善我们的课表！'
